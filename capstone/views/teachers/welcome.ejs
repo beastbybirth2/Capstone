@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include local Tailwind CSS -->
+    <link rel="stylesheet" href="/css/tailwind.css">
+    <title>Teacher's Page</title>
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-gray-900 text-white p-4">
+        <div class="flex justify-between items-center">
+            <div class="text-xl font-bold">Welcome teacher</div>
+            <div class="space-x-4">
+                <a href="/teachers/dashboard" class="hover:underline">Dashboard</a>
+                <a href="/teachers/chat" class="hover:underline">Chat</a>
+                <a href="/teachers/addstudents" class="hover:underline">Add Students</a>
+                <a href="/teachers/createQuiz" class="hover:underline">Create Quiz</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content with attractive cards for teachers -->
+    <div class="container mx-auto py-8">
+        <h1 class="text-3xl font-semibold mb-4">Teacher's Page</h1>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- Card 1 -->
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold mb-2">Dashboard</h2>
+                <p>Access your teacher's dashboard to manage your teaching activities.</p>
+                <a href="/teachers/dashboard" class="mt-4 inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded">Go to Dashboard</a>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold mb-2">Chat with Students</h2>
+                <p>Communicate with your students through the chat feature.</p>
+                <a href="/teachers/chat" class="mt-4 inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded">Start Chatting</a>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold mb-2">Add Students</h2>
+                <p>Add new students to your teaching platform and manage their profiles.</p>
+                <a href="/teachers/addstudents" class="mt-4 inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded">Add Students</a>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <h2 class="text-xl font-semibold mb-2">Create Quiz</h2>
+                <p>Create educational quizzes for your students to enhance their learning.</p>
+                <a href="/teachers/createQuiz" class="mt-4 inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded">Create Quiz</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
