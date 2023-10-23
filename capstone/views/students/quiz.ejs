@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz Page</title>
+  <link rel="stylesheet" href="/css/navbar.css">
+  <link rel="stylesheet" href="/css/quiz.css">
+</head>
+<body>
+  <div class="nav"></div>
+
+  <h1>Quiz Page</h1>
+  <form id="quizForm">
+    <label for="quizId">Enter Quiz ID:</label>
+    <input type="text" id="quizId" name="quizId" required>
+    <button type="submit">Start Quiz</button>
+  </form>
+
+  <div id="quizContainer">
+    <h2>Quiz Questions</h2>
+    <form id="quizQuestionsForm">
+      <!-- Quiz questions will be dynamically added here -->
+      <button type="submit">Submit Quiz</button>
+    </form>
+  </div>
+
+  <script src="/js/navbar.js"></script>
+  <script src="/js/quizStudent.js"></script>
+</body>
+</html>
